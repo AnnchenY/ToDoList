@@ -1,0 +1,43 @@
+<footer>
+    <p>Copyright © <%= new Date().getFullYear(); %></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+var listLength = document.querySelectorAll("li").length;
+
+for (let i=0; i<listLength-1; i++){
+document.querySelectorAll("li")[i].addEventListener("click", ()=>{
+    document.querySelectorAll("li")[i].classList.toggle("crossed");
+});
+}
+
+const form = document.getElementById("newItem");
+const input = document.getElementById("newInfo");
+const ul = document.querySelector("#listOfTasks");
+
+function createLi(){
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    span.textContent = input.value;
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "check";
+    span.className = "width";
+    li.appendChild(checkbox);
+    li.appendChild(span);
+    return li
+}
+
+form.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    const hr = document.createElement("hr");
+    const li = createLi();
+    ul.appendChild(li);
+    ul.appendChild(hr);
+    input.value = '';
+})
+
+
+</script>

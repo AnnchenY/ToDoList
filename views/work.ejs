@@ -1,0 +1,45 @@
+<%- include("header.ejs") %>
+
+<body>
+
+   
+    <div class="container">
+
+        <div class="title">       
+            <h1>Work List</h1>
+        </div>
+
+
+        <div class="tasks">
+            <ul id="listOfTasks">
+                <li><input type="checkbox" class="check" />Read a book</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Watch a film</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Meet with friends</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Go to the gym</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Visit grandma</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Send an email</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Walk the dog</li>
+                <hr />
+
+            </ul>
+                
+            <form id="newItem">
+                <li>
+                    <input type="text" placeholder="New Item" id="newInfo">
+                    <button type="submit" name="submit" value="submit">+</button>
+                </li>
+            </form>
+    </div>
+
+
+
+</body>
+</html>
+
+<%- include("footer.ejs") %>

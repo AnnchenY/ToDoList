@@ -1,0 +1,129 @@
+body {
+
+    background: linear-gradient(45deg, #9400FF90, #AED2FF);   
+
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 400px;
+}
+
+.width {
+    width: 400px;
+}
+
+button {
+    color: #27005D;
+    background-color: transparent;
+    border: none;
+    margin: 15px;
+}
+
+.title {
+    background-color: #27005D;
+    border-radius: 10px; 
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title {
+    background-color: #27005D;
+    border-radius: 10px;   
+}
+
+ul {
+    list-style-type: none;
+    color: #27005D;
+    padding-left: 0;
+    margin: 0;
+    border: 0;
+  }
+
+form {
+    list-style-type: none;
+    color: #27005D;
+    padding-left: 0;
+    margin: 0;
+    border: 0;
+}
+
+li {
+    padding: 20px;
+}
+
+img {
+    margin-right: 5px;
+}
+
+.tasks {
+    background-color: #E4F1FF;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.check {
+    margin-right: 20px;
+}
+
+hr {
+    width: 99%;
+    margin: 0;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.crossed {
+    text-decoration: line-through;
+    text-decoration-color: #9400FF90;
+}
+
+li input[type="text"]{
+    font-size: 24px;
+    color: #27005D;
+    margin-left: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 250px;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+li button {
+    background-color: #9400FF80;
+    border-radius: 50%;
+    border: 0;
+    height: 45px;
+    width: 45px;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    padding: 0;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+  
+a {
+    text-decoration: none;
+}

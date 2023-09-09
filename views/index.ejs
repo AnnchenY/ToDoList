@@ -1,0 +1,47 @@
+<%- include("header.ejs") %>
+
+<body>
+
+   
+    <div class="container">
+
+        <div class="title">
+            <% var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; %>
+            <% var month = ["January","February","March","April","May","June","July","August","September","October","November","December"]; %>
+
+            <h1><%= days[new Date().getDay()] %>, <%= month[new Date().getMonth()]; %> <%= new Date().getDate(); %></h1>
+        </div>
+
+
+        <div class="tasks">
+            <ul id="listOfTasks">
+                <li><input type="checkbox" class="check" />Revise Flexbox</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Create a Website that people'll love</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Read the book about DOM</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Finish To Do List</li>
+                <hr />
+                <li><input type="checkbox" class="check" />Eat</li>
+                <hr />
+
+            </ul>
+                
+            <form id="newItem">
+                <li>
+                    <input type="text" placeholder="New Item" id="newInfo">
+                    <button type="submit" name="submit" value="submit">+</button>
+                </li>
+            </form>
+                
+            
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+<%- include("footer.ejs") %>
